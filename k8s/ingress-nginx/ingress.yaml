@@ -29,6 +29,13 @@ spec:
         backend:
           serviceName: id
           servicePort: 80
+  - host: hrz.globalhost
+    http:
+      paths:
+      - path: /
+        backend:
+          serviceName: hrz
+          servicePort: 80          
   tls:
   - secretName: global-cd-tls
     hosts:
