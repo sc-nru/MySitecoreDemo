@@ -39,3 +39,6 @@ spec:
   - secretName: global-id-tls
     hosts:
     - id.globalhost
+  - secretName: global-hrz-tls
+    hosts:
+    - hrz.globalhost
