@@ -43,7 +43,8 @@ COPY --from=solution \artifacts\transforms\ \transforms\solution\
 # Copy role transforms
 COPY .\transforms\ \transforms\role\
 
-
+#Enable Websockets
+RUN powershell -Command Add-WindowsFeature Web-WebSockets
 
 # Perform solution transforms
 RUN C:\tools\scripts\Invoke-XdtTransform.ps1 -Path .\ -XdtPath C:\transforms\solution\DockerExamples.Website
