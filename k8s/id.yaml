@@ -74,6 +74,8 @@ spec:
           value: https://cm.globalhost/sitecore/login?rc=1
         - name: Sitecore_Sitecore__IdentityServer__Clients__DefaultClient__AllowedCorsOrigins__AllowedCorsOriginsGroup1
           value: https://cm.globalhost
+        - name: Sitecore_Sitecore__IdentityServer__Clients__DefaultClient__AllowedCorsOrigins__AllowedCorsOriginsGroup2
+          value: https://hrz.globalhost          
         - name: Sitecore_Sitecore__IdentityServer__PublicOrigin
           value: https://id.globalhost
         livenessProbe:

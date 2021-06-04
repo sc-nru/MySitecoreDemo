@@ -29,7 +29,7 @@ spec:
         kubernetes.io/os: windows
       containers:
       - name: sitecore-xm1-hrz
-        image: ${SITECORE_MODULE_REGISTRY}sitecore-horizon:${HORIZON_VERSION}
+        image: scr.sitecore.com/sxp/modules/sitecore-horizon:2.26.0-ltsc2019
         ports:
         - containerPort: 80
         env:
@@ -147,7 +147,7 @@ spec:
         - name: Sitecore_Identity_Server_Authority
           value: https://id.globalhost
         - name: Sitecore_Identity_Server_CallbackAuthority
-          value: https://cm.globalhost
+          value: https://hrz.globalhost
         - name: Sitecore_Identity_Server_InternalAuthority
           value: http://id
         - name: Sitecore_Identity_Server_Require_Https
